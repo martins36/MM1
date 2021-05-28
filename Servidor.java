@@ -1,34 +1,34 @@
 public class Servidor {
-	
-	private double  t_ocioso;
-	private double  t_ocupado;
-	private int     c_atendidos;
+
+	private double  tiempoOcioso;
+	private double  tiempoOcupado;
+	private int     cantidadAtendidos;
 	private boolean ocupado;
-	
+
 	public Servidor() {
-		this.t_ocioso    = 0;
-		this.t_ocupado   = 0;
-		this.c_atendidos = 0;
-		this.ocupado     = false;
+		this.tiempoOcioso      = 0;
+		this.tiempoOcupado     = 0;
+		this.cantidadAtendidos = 0;
+		this.ocupado           = false;
 	}
-	
-	public double getT_ocioso() {
-		return t_ocioso;
+
+	public double getTiempoOcioso() {
+		return tiempoOcioso;
 	}
-	public void setT_ocioso(double t_ocioso) {
-		this.t_ocioso += t_ocioso;
+	public void setTiempoOcioso(double tiempoOcioso) {
+		this.tiempoOcioso += tiempoOcioso;
 	}
-	public double getT_ocupado() {
-		return t_ocupado;
+	public double getTiempoOcupado() {
+		return tiempoOcupado;
 	}
-	public void setT_ocupado(double t_ocupado) {
-		this.t_ocupado += t_ocupado;
+	public void setTiempoOcupado(double tiempoOcupado) {
+		this.tiempoOcupado += tiempoOcupado;
 	}
-	public int getC_atendidos() {
-		return c_atendidos;
+	public int getCantidadAtendidos() {
+		return cantidadAtendidos;
 	}
-	public void setC_atendidos(int c_atendidos) {
-		this.c_atendidos += c_atendidos;
+	public void setCantidadAtendidos(int cantidadAtendidos) {
+		this.cantidadAtendidos += cantidadAtendidos;
 	}
 	public boolean isOcupado() {
 		return ocupado;

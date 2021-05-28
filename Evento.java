@@ -1,44 +1,44 @@
 public class Evento implements Comparable<Evento>{
 
-	private String tipo;
-	private double t_ocurrencia;
-	private double t_inicio;
-	
-	public Evento(String tipo, double t_ocurrencia) {
-		this.tipo         = tipo;
-		this.t_ocurrencia = t_ocurrencia;
-	}
-	
-	public Evento(String tipo, double t_ocurrencia, double t_inicio) {
-		this.tipo         = tipo;
-		this.t_ocurrencia = t_ocurrencia;
-		this.t_inicio	  = t_inicio;
-	}
-	
-	public String getTipo() {
-		return tipo;
-	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-	public double getT_ocurrencia() {
-		return t_ocurrencia;
-	}
-	public void setT_ocurrencia(double t_ocurrencia) {
-		this.t_ocurrencia = t_ocurrencia;
-	}
-	
-	public double getT_inicio() {
-		return t_inicio;
+	private Eventos tipo;
+	private double  tiempoOcurrencia;
+	private double  tiempoInicio;
+
+	public Evento(Eventos tipo, double tiempoOcurrencia) {
+		this.tipo             = tipo;
+		this.tiempoOcurrencia = tiempoOcurrencia;
 	}
 
-	public void setT_inicio(double t_inicio) {
-		this.t_inicio = t_inicio;
+	public Evento(Eventos tipo, double tiempoOcurrencia, double tiempoInicio) {
+		this.tipo             = tipo;
+		this.tiempoOcurrencia = tiempoOcurrencia;
+		this.tiempoInicio	  = tiempoInicio;
+	}
+
+	public Eventos getTipo() {
+		return tipo;
+	}
+	public void setTipo(Eventos tipo) {
+		this.tipo = tipo;
+	}
+	public double getTiempoOcurrencia() {
+		return tiempoOcurrencia;
+	}
+	public void setTiempoOcurrencia(double tiempoOcurrencia) {
+		this.tiempoOcurrencia = tiempoOcurrencia;
+	}
+
+	public double getTiempoInicio() {
+		return tiempoInicio;
+	}
+
+	public void setTiempoInicio(double tiempoInicio) {
+		this.tiempoInicio = tiempoInicio;
 	}
 
 	@Override
 	public int compareTo(Evento evento) {
-		return Double.compare(this.t_ocurrencia, evento.t_ocurrencia);
+		return Double.compare(this.tiempoOcurrencia, evento.tiempoOcurrencia);
     }
-	
+
 }
